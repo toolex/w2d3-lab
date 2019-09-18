@@ -26,6 +26,12 @@ class HiddenWord
     return letter if @word.include?(letter)
   end
 
+  # def letter_not_in_word(letter)
+  #   if @word.exclude?(letter)
+  #     then player_lives -= 1
+  #     return player_lives
+  # end
+
   def find_index(letter)
     return @word.index(letter)
   end

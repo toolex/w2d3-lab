@@ -12,8 +12,15 @@ class Game
     return @guesses.length
   end
 
+  def letter_not_in_word(letter)
+    if @word.exclude?(letter)
+      then player_lives -= 1
+      return player_lives
+    end
+  end
+
   def add_guessed_letter(letter)
-    @guesses.push(letter)
+    return @guesses.push(letter)
   end
 
   def has_letter_been_guessed(letter)
@@ -30,5 +37,7 @@ class Game
     end
 
   end
+
+
 
 end
