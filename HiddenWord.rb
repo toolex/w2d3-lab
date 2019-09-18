@@ -26,5 +26,9 @@ end
     return true if @word.include?(letter)
   end
 
+  def find_index(letter)
+    return @word.index(letter)
+  end
+
 
 end

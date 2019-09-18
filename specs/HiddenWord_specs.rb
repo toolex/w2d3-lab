@@ -30,5 +30,13 @@ class TestHiddenWord < MiniTest::Test
     assert_equal(true, @word.letter_in_word("s"))
   end
 
+  def test_find_letter_index
+    fun_word = @word.split_word()
+    assert_equal(0,fun_word.find_index("s"))
+  end
+
+
+  # assert_equal(["s", "*", "*", "*", "*", "*", "*"], @word.hide_word(fun_word))
+  # assert_equal(true, @word.letter_in_word("s"))
 
 end
