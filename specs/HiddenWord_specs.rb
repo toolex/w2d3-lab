@@ -20,6 +20,9 @@ class TestHiddenWord < MiniTest::Test
     assert_equal(["s", "n", "o", "w", "m", "a", "n"], @word.split_word())
   end
 
-  
+  def test_hide_word
+    assert_equal("*******", @word.hide_word())
+  end
+
 
 end

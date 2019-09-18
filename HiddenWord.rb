@@ -11,8 +11,12 @@ class HiddenWord
   end
 
   def split_word()
-    split_word = @word.split("") 
+    split_word = @word.split("")
     return split_word
+  end
+
+  def hide_word()
+    @word.replace("*******")
   end
 
 end
