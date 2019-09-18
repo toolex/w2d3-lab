@@ -15,20 +15,24 @@ class HiddenWord
     return split_word
   end
 
-def hide_word(word)
-asterisk = []
-word_length = @word.length
-asterisk.push("*")  * word_length
-end
+  def hide_word(word)
+    asterisk = []
+    word_length = @word.length
+    hidden_array = asterisk.push("*")  * word_length
+  end
 
 
   def letter_in_word(letter)
-    return true if @word.include?(letter)
+    return letter if @word.include?(letter)
   end
 
   def find_index(letter)
     return @word.index(letter)
   end
 
+  def use_index_to_replace_letter(array, index_position, correct_guess)
+    array[index_position] = correct_guess
+    return array
+  end
 
 end

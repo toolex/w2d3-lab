@@ -46,4 +46,8 @@ class TestGame < MiniTest::Test
     assert_equal("s******", @game.correct_guess())
   end
 
+  def test_player_loses_life
+    assert_equal(5, @player.player_loses_life)
+  end
+
 end
