@@ -22,7 +22,7 @@ class TestHiddenWord < MiniTest::Test
 
   def test_hide_word
     fun_word = @word.split_word()
-    assert_equal("*******", @word.hide_word(fun_word))
+    assert_equal(["*", "*", "*", "*", "*", "*", "*"], @word.hide_word(fun_word))
   end
 
   def test_is_letter_in_word

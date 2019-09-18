@@ -15,10 +15,12 @@ class HiddenWord
     return split_word
   end
 
-  def hide_word(word)
-    word_length = @word.length
-    return "*" * word_length
-  end
+def hide_word(word)
+asterisk = []
+word_length = @word.length
+asterisk.push("*")  * word_length
+end
+
 
   def letter_in_word(letter)
     return true if @word.include?(letter)

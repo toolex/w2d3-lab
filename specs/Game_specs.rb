@@ -42,4 +42,8 @@ class TestGame < MiniTest::Test
     assert_equal(true, @game.letter_in_word("s"))
   end
 
+  def test_show_word_with_correct_guess
+    assert_equal("s******", @game.correct_guess())
+  end
+
 end
