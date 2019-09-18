@@ -16,8 +16,8 @@ class Game
     @guesses.push(letter)
   end
 
-  # def has_letter_been_guessed(array, letter)
-  #   array.include?(letter)
-  # end
+  def has_letter_been_guessed(letter)
+    return true if @guesses.include?(letter)
+  end
 
 end

@@ -33,10 +33,9 @@ class TestGame < MiniTest::Test
     assert_equal(1, @game.total_guesses)
   end
 
-
-  #
-  # def test_has_letter_been_guessed()
-  #   assert_equal(true, @game.has_letter_been_guessed(@guesses, "g"))
-  # end
+  def test_has_letter_been_guessed()
+    @game.add_guessed_letter("g")
+    assert_equal(true, @game.has_letter_been_guessed("g"))
+  end
 
 end
