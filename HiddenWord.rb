@@ -15,8 +15,9 @@ class HiddenWord
     return split_word
   end
 
-  def hide_word()
-    @word.replace("*******")
+  def hide_word(word)
+    word_length = @word.length
+    return "*" * word_length
   end
 
 end

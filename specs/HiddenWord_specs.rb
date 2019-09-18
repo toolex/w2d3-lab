@@ -21,7 +21,8 @@ class TestHiddenWord < MiniTest::Test
   end
 
   def test_hide_word
-    assert_equal("*******", @word.hide_word())
+    fun_word = @word.split_word()
+    assert_equal("*******", @word.hide_word(fun_word))
   end
 
 
