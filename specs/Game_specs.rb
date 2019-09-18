@@ -38,4 +38,8 @@ class TestGame < MiniTest::Test
     assert_equal(true, @game.has_letter_been_guessed("g"))
   end
 
+  def test_is_letter_in_word
+    assert_equal(true, @game.letter_in_word("s"))
+  end
+
 end

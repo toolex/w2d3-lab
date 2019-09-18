@@ -20,4 +20,9 @@ class HiddenWord
     return "*" * word_length
   end
 
+  def letter_in_word(letter)
+    return true if @word.include?(letter)
+  end
+
+
 end
