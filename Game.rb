@@ -20,4 +20,15 @@ class Game
     return true if @guesses.include?(letter)
   end
 
+  def result_of_game(array, word, lives)
+    if array.join("") == word
+      return "You Win"
+    elsif lives > 0
+      p "Guess Again"
+    elsif lives == 0
+      return "You Lose"
+    end
+
+  end
+
 end
