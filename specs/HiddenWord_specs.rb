@@ -16,4 +16,10 @@ class TestHiddenWord < MiniTest::Test
     assert_equal("snowman", @word.word_exists)
   end
 
+  def test_split_word
+    assert_equal(["s", "n", "o", "w", "m", "a", "n"], @word.split_word())
+  end
+
+  
+
 end

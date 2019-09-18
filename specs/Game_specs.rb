@@ -8,6 +8,10 @@ class TestGame < MiniTest::Test
 
   def setup
 
+    @word = HiddenWord.new("snowman")
+
+    @player = Player.new("Bob", 6)
+
 
   end
 

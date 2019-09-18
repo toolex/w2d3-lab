@@ -10,4 +10,9 @@ class HiddenWord
     return @word
   end
 
+  def split_word()
+    split_word = @word.split("") 
+    return split_word
+  end
+
 end
