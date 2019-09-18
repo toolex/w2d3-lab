@@ -8,6 +8,8 @@ class TestGame < MiniTest::Test
 
   def setup
 
+    @game = Game.new
+
     @word = HiddenWord.new("snowman")
 
     @player = Player.new("Bob", 6)
@@ -20,6 +22,10 @@ class TestGame < MiniTest::Test
 
   def test_word_exists
     assert_equal("snowman", @word.word_exists)
+  end
+
+  def test_start_guesses_empty
+    assert_equal(0, @game.guesses_empty)
   end
 
 end
